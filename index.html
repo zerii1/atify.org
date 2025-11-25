@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang=pl>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title data-i18n=title>Atify — Zespół</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Montserrat:wght@600;800;900&display=swap" rel=stylesheet>
+<style>:root{--bg:#050507;--card:#0b0b0c;--muted:#9aa0a6;--accent:#ffffff;--glass:rgba(255,255,255,0.05);--primary-grad:linear-gradient(90deg,#8ab4ff 0%,#7dd3fc 100%);--shadow-glow:0 10px 40px rgba(125,211,252,0.2);--highlight:#7dd3fc}*{box-sizing:border-box;margin:0;padding:0}body,html{height:100%;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Montserrat,sans-serif;background:linear-gradient(180deg,var(--bg),#020203);color:var(--accent);-webkit-font-smoothing:antialiased;overflow-x:hidden}header{position:fixed;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;z-index:60;background:rgba(5,5,7,.6);backdrop-filter:blur(12px);padding:12px 24px;border-radius:0 0 12px 12px;transition:.3s}.logo{font-weight:900;font-family:Montserrat,Inter;font-size:22px;letter-spacing:1px;cursor:pointer}nav{display:flex;gap:12px;flex-wrap:nowrap;justify-content:flex-end;align-items:center}nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px;padding:8px 12px;border-radius:8px;transition:.3s;white-space:nowrap}nav a:hover{color:var(--accent);background:var(--glass)}#contactBtn{cursor:pointer;transition:.3s transform,.3s box-shadow}#contactBtn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(125,211,252,.35)}.lang-switch{position:relative}.lang-btn{display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:8px;background:0 0;border:1px solid rgba(255,255,255,.1);color:#fff;cursor:pointer;font-weight:600;font-size:14px}.lang-btn img{width:22px;height:16px;object-fit:cover;border-radius:3px}.lang-menu{position:absolute;top:42px;right:0;background:#0c0c0e;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:8px 0;display:none;flex-direction:column;width:150px;z-index:999}.lang-menu.open{display:flex}.lang-option{display:flex;align-items:center;gap:8px;padding:10px 14px;color:#fff;cursor:pointer;transition:.2s}.lang-option:hover{background:rgba(255,255,255,.07)}.lang-option img{width:22px;height:16px;border-radius:3px}.hamburger{display:none;flex-direction:column;gap:4px;padding:8px 10px;cursor:pointer}.hamburger div{width:24px;height:3px;background:#fff;border-radius:2px}.mobile-onas{display:none;position:absolute;top:70px;right:20px;background:#0c0c0e;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,.15)}.mobile-onas a{color:#fff;text-decoration:none;font-size:16px;font-weight:700}.mobile-onas.show{display:block}@media (max-width:768px){#onasLink{display:none}nav{gap:8px}.hamburger{display:flex}}.container{max-width:1200px;margin:0 auto;padding:100px 28px;min-height:100vh;display:flex;align-items:center;position:relative}.hero{display:grid;grid-template-columns:1fr 520px;gap:48px;align-items:center;width:100%;position:relative}.eyebrow{color:var(--muted);font-size:14px;margin-bottom:12px;letter-spacing:.5px;opacity:0;transform:translateY(20px);animation:fadeUp 1s forwards .2s}h1{font-family:Montserrat,Inter;font-size:72px;line-height:1.05;margin-bottom:20px;font-weight:900;text-transform:uppercase;letter-spacing:-1px;opacity:0;transform:translateY(20px);animation:fadeUp 1s forwards .4s}p.lead{color:var(--muted);max-width:620px;font-size:17px;margin-bottom:30px;line-height:1.6;opacity:0;transform:translateY(20px);animation:fadeUp 1s forwards .6s}.cta{display:flex;gap:16px;align-items:center;opacity:0;transform:translateY(20px);animation:fadeUp 1s forwards .8s}.btn{display:inline-flex;align-items:center;gap:12px;padding:14px 26px;border-radius:999px;font-weight:700;border:0;cursor:pointer;font-size:15px;transition:.3s transform,.3s box-shadow,.3s background}.btn.primary{background:var(--primary-grad);color:#08101a;box-shadow:var(--shadow-glow)}.btn.primary:hover{transform:translateY(-2px);box-shadow:0 20px 50px rgba(125,211,252,.35)}.btn.ghost{background:0 0;border:1px solid rgba(255,255,255,.06);color:var(--accent)}.btn.ghost:hover{background:var(--glass);color:var(--accent)}.right{display:flex;justify-content:center;align-items:center;position:relative}.card-3d{width:460px;height:460px;border-radius:22px;background:linear-gradient(180deg,#0b0b0b,#070707);display:flex;align-items:center;justify-content:center;box-shadow:0 40px 120px rgba(0,0,0,.7);transform:translateZ(0);overflow:visible;position:relative;backdrop-filter:blur(6px);animation:floaty 6s ease-in-out infinite}.card-3d img{width:420px;height:420px;object-fit:contain;display:block;border-radius:16px;filter:drop-shadow(0 28px 50px rgba(0,0,0,.6))}@keyframes floaty{0%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}100%{transform:translateY(0) rotate(-2deg)}}@keyframes fadeUp{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)}}footer{position:fixed;left:24px;bottom:18px;color:var(--muted);font-size:13px}footer a{color:var(--accent);text-decoration:none;transition:.3s color}#footerMail.flash{color:#7dd3fc!important;text-shadow:0 0 12px #7dd3fc;transition:.3s}.onas-panel{position:fixed;top:0;right:-100%;width:100%;height:100vh;background:rgba(5,5,7,.97);backdrop-filter:blur(10px);padding:80px 10%;display:flex;flex-direction:column;gap:30px;z-index:999;transition:.6s ease}.onas-panel.open{right:0}.onas-content{max-width:900px}.onas-content h2{font-family:Montserrat;font-size:66px;font-weight:900;line-height:1;margin-bottom:20px}.onas-content p{color:#9aa0a6;font-size:20px;max-width:600px;line-height:1.6;margin-bottom:40px}.onas-content img{display:block;max-width:100%;height:auto;object-fit:contain;margin-top:20px;margin-bottom:20px}.close-onas{position:absolute;top:26px;right:26px;padding:10px 20px;font-weight:700;border-radius:8px;cursor:pointer;border:1px solid rgba(255,255,255,.15);background:0 0;color:#fff;transition:.3s}.close-onas:hover{background:rgba(255,255,255,.1)}@media (max-width:768px){header{flex-direction:row;align-items:center;padding:12px 12px;justify-content:space-between}nav{flex:1;justify-content:flex-end;gap:6px;flex-wrap:nowrap;overflow-x:auto}#contactBtn{padding:8px 12px;font-size:14px}.container{padding:140px 12px 40px 12px}.hero{grid-template-columns:1fr;gap:32px}h1{font-size:48px;line-height:1.1}p.lead{font-size:16px;max-width:100%}.card-3d{width:320px;height:320px}.card-3d img{width:300px;height:300px}.onas-panel{padding:60px 8%}.onas-content h2{font-size:40px}.onas-content p{font-size:16px}.close-onas{top:16px;right:16px}}.mobile-lang-menu{display:none;position:absolute;top:120px;right:20px;background:#0c0c0e;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.15);width:160px;z-index:999}.mobile-lang-menu.show{display:block}.mobile-lang-menu .lang-option{display:flex;align-items:center;gap:8px;padding:10px 10px;font-size:16px;cursor:pointer}.fanth-footer{width:100%;padding:40px 40px 60px;color:#cfcfcf;position:relative}.fanth-footer hr{width:100%;border:0;border-top:1px solid #1a1a1a;margin-bottom:25px}.footer-left{float:left;font-size:18px;line-height:1.6}.footer-rights{color:#dcdcdc}.footer-contact a{color:#bdbdbd;text-decoration:none}.footer-contact a:hover{color:#fff}.footer-icons{float:right;display:flex;gap:22px;align-items:center}.footer-icons svg{width:28px;opacity:.85;transition:.2s}.footer-icons svg:hover{opacity:1;transform:translateY(-2px)}@media (max-width:768px){.fanth-footer{text-align:center;padding:40px 20px 70px}.footer-left{float:none;width:100%;text-align:center;margin-bottom:25px}.footer-rights{font-size:16px}.footer-contact a{font-size:15px}.footer-icons{float:none;width:100%;justify-content:center;margin-top:10px;gap:26px}.footer-icons svg{width:32px;height:32px}}@media (max-width:768px){.fanth-footer{display:flex;flex-direction:column;align-items:center}.footer-icons,.footer-left{margin-left:0!important;padding-left:0!important}}@media (max-width:768px){footer{left:0!important;width:100%!important;text-align:center!important}}</style>
+</head>
+<body>
+<header>
+<div class=logo id=logo>Atify</div>
+<nav>
+<a href=#onas id=onasLink data-i18n=menu_about>O nas</a>
+<div class=lang-switch>
+<button class=lang-btn id=langBtn>
+<img id=langFlag src=https://flagcdn.com/w20/pl.png>
+<span id=langName>Polski</span>
+</button>
+<div class=lang-menu id=langMenu>
+<div class=lang-option data-lang=pl data-name=Polski data-flag=https://flagcdn.com/w20/pl.png>
+<img src=https://flagcdn.com/w20/pl.png> Polski
+</div>
+<div class=lang-option data-lang=en data-name=English data-flag=https://flagcdn.com/w20/gb.png>
+<img src=https://flagcdn.com/w20/gb.png> English
+</div>
+<div class=lang-option data-lang=de data-name=Deutsch data-flag=https://flagcdn.com/w20/de.png>
+<img src=https://flagcdn.com/w20/de.png> Deutsch
+</div>
+<div class=lang-option data-lang=jp data-name=日本語 data-flag=https://flagcdn.com/w20/jp.png>
+<img src=https://flagcdn.com/w20/jp.png> 日本語
+</div>
+</div>
+</div>
+<button id=contactBtn class="btn ghost" data-i18n=menu_contact>Kontakt</button>
+<div class=mobile-onas id=mobileOnas>
+<a href=#onas id=mobileOnasLink>O nas</a>
+</div>
+<div class=mobile-lang-menu id=mobileLangMenu>
+<div class=lang-option data-lang=pl data-name=Polski data-flag=https://flagcdn.com/w20/pl.png>
+<img src=https://flagcdn.com/w20/pl.png> Polski
+</div>
+<div class=lang-option data-lang=en data-name=English data-flag=https://flagcdn.com/w20/gb.png>
+<img src=https://flagcdn.com/w20/gb.png> English
+</div>
+<div class=lang-option data-lang=de data-name=Deutsch data-flag=https://flagcdn.com/w20/de.png>
+<img src=https://flagcdn.com/w20/de.png> Deutsch
+</div>
+<div class=lang-option data-lang=jp data-name=日本語 data-flag=https://flagcdn.com/w20/jp.png>
+<img src=https://flagcdn.com/w20/jp.png> 日本語
+</div>
+</div>
+<div class=hamburger id=hamburger>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</nav>
+</header>
+<main class=container>
+<section class=hero>
+<div>
+<div class=eyebrow data-i18n=eyebrow>Nowoczesna technologia · Kreatywna ekipa</div>
+<h1 data-i18n=hero_title>ATIFY — DOŁĄCZ DO EKIPY</h1>
+<p class=lead data-i18n=hero_text>
+Atify to miejsce, gdzie łączymy design, technologię i biznes. Obecnie rozbudowujemy zespół — szukamy frontend developerów, grafików, product designerów i osób z pasją do tworzenia.
+</p>
+<div class=cta>
+<button class="btn primary" id=openForm data-i18n=cta_write>Napisz do nas</button>
+</div>
+</div>
+<div class=right>
+<div class=card-3d><img src=atify-logo-ekipa.png></div>
+</div>
+</section>
+</main>
+<div id=onasPanel class=onas-panel>
+<div class=onas-content>
+<h2 data-i18n=about_title>INNOWACJE PRZEZ TECHNOLOGIĘ</h2>
+<p data-i18n=about_text>
+Atify to strona, która zajmuje się tworzeniem grafik, animacji, stron internetowych oraz usługami DevOps i szeroko pojętym wsparciem IT.
+</p>
+<img src=image1237.png>
+</div>
+<button id=closeOnas class=close-onas data-i18n=close>Zamknij</button>
+</div>
+<footer class=fanth-footer>
+<hr>
+<div class=footer-left>
+<div class=footer-rights>© 2025 Atify.org Wszelkie prawa zastrzeżone.</div>
+<div class=footer-contact>
+<a href=mailto:kontakt@atify.pl id=footerMail>kontakt@atify.org</a>
+</div>
+</div>
+<div class=footer-icons>
+<a href=https://discord.gg/G9NAS2yy>
+<svg viewBox="0 0 24 24">
+<path fill=currentColor d="M19.54 5.23a16.9 16.9 0 0 0-4.06-1.22c-.18.33-.39.78-.53 1.14a15.9 15.9 0 0 0-5.9 0c-.14-.36-.35-.81-.53-1.14a16.9 16.9 0 0 0-4.06 1.22C2.39 9.27 1.91 13.22 2.18 17.13a16.9 16.9 0 0 0 5.32 2.64c.41-.58.78-1.22 1.1-1.89a10.6 10.6 0 0 1-1.8-.86l.43-.33a12.6 12.6 0 0 0 10.54 0l.43.33c-.6.35-1.2.65-1.8.86c.32.67.69 1.31 1.1 1.89a16.9 16.9 0 0 0 5.32-2.64c.32-3.78-.15-7.73-2.88-11.9zM8.7 14.36c-1.07 0-1.93-.96-1.93-2.14c0-1.18.87-2.14 1.93-2.14c1.07 0 1.93.96 1.93 2.14c0 1.18-.86 2.14-1.93 2.14zm6.6 0c-1.07 0-1.93-.96-1.93-2.14c0-1.18.86-2.14 1.93-2.14c1.07 0 1.93.96 1.93 2.14c0 1.18-.86 2.14-1.93 2.14z"/>
+</svg>
+</a>
+<a href=https://facebook.com/ >
+<svg viewBox="0 0 24 24">
+<path fill=currentColor d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2V9.5c0-2 1.2-3.1 3-3.1c.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"/>
+</svg>
+</a>
+<a href=https://x.com/ >
+<svg viewBox="0 0 24 24">
+<path fill=currentColor d="M18.9 2H22l-7 8l8 12h-6.2L12.9 15l-5.2 7H2l7.5-9.1L2.7 2H9l4 5.8z"/>
+</svg>
+</a>
+<a href="https://www.tiktok.com/@atifyorg?_r=1&_t=ZN-91fgswbmV6M">
+<svg viewBox="0 0 24 24">
+<path fill=currentColor d="M12.5 2c.3 2.3 1.9 4.1 4.2 4.3v3.4c-1.4.1-2.7-.4-4-1.2v6.8A6 6 0 1 1 6.5 9.3c.3 0 .6 0 .8.1v3.6a2.4 2.4 0 1 0 3.4 2.2V2z"/>
+</svg>
+</a>
+</div>
+</footer>
+<script>const hamburger=document.getElementById("hamburger"),mobileOnas=document.getElementById("mobileOnas"),mobileLangMenu=document.getElementById("mobileLangMenu");hamburger.addEventListener("click",(()=>{mobileOnas.classList.toggle("show"),mobileLangMenu.classList.toggle("show")})),document.getElementById("mobileOnasLink").addEventListener("click",(e=>{e.preventDefault(),mobileOnas.classList.remove("show"),document.getElementById("onasPanel").classList.add("open"),document.body.style.overflow="hidden"}));const translations={pl:{title:"Atify — Zespół",menu_about:"O nas",menu_contact:"Kontakt",eyebrow:"Nowoczesna technologia · Kreatywna ekipa",hero_title:"ATIFY — DOŁĄCZ DO EKIPY",hero_text:"Atify to miejsce, gdzie łączymy design, technologię i biznes. Obecnie rozbudowujemy zespół — szukamy frontend developerów, grafików, product designerów i osób z pasją do tworzenia.",cta_write:"Napisz do nas",about_title:"INNOWACJE PRZEZ TECHNOLOGIĘ",about_text:"Atify to strona, która zajmuje się tworzeniem grafik, animacji, stron internetowych oraz usługami DevOps i wsparciem IT.",close:"Zamknij",rights:"Wszelkie prawa zastrzeżone!"},en:{title:"Atify — Team",menu_about:"About us",menu_contact:"Contact",eyebrow:"Modern technology · Creative team",hero_title:"ATIFY — JOIN OUR TEAM",hero_text:"Atify is a place where design, technology and business come together. We are expanding our team — looking for frontend developers, graphic designers, product designers and tech-passionate creators.",cta_write:"Write to us",about_title:"INNOVATION THROUGH TECHNOLOGY",about_text:"Atify creates graphics, animations, websites and also provides DevOps and IT support services.",close:"Close",rights:"All rights reserved!"},de:{title:"Atify — Team",menu_about:"Über uns",menu_contact:"Kontakt",eyebrow:"Moderne Technologie · Kreatives Team",hero_title:"ATIFY — TRITT DEM TEAM BEI",hero_text:"Atify ist ein Ort, an dem Design, Technologie und Geschäft zusammenkommen. Wir erweitern unser Team — wir suchen Frontend-Entwickler, Grafiker, Produktdesigner und kreative Talente.",cta_write:"Schreib uns",about_title:"INNOVATION DURCH TECHNOLOGIE",about_text:"Atify erstellt Grafiken, Animationen, Websites und bietet DevOps- und IT-Unterstützung.",close:"Schließen",rights:"Alle Rechte vorbehalten!"},jp:{title:"Atify — チーム",menu_about:"私たちについて",menu_contact:"連絡先",eyebrow:"最新技術 · クリエイティブチーム",hero_title:"ATIFY — チームに参加しよう",hero_text:"Atify はデザイン・技術・ビジネスを融合する場所です。現在、フロントエンド開発者、デザイナー、クリエイターを募集しています。",cta_write:"お問い合わせ",about_title:"テクノロジーによる革新",about_text:"Atify はグラフィック、アニメーション、Webサイト制作、DevOps、ITサポートを提供しています。",close:"閉じる",rights:"全著作権所有!"}};function applyTranslations(e){document.querySelectorAll("[data-i18n]").forEach((t=>{const n=t.dataset.i18n;translations[e][n]&&(t.textContent=translations[e][n])})),document.title=translations[e].title}let currentLang=localStorage.getItem("lang")||"pl";applyTranslations(currentLang);const langBtn=document.getElementById("langBtn"),langMenu=document.getElementById("langMenu"),langFlag=document.getElementById("langFlag"),langName=document.getElementById("langName"),savedOption=document.querySelector(`.lang-option[data-lang="${currentLang}"]`);savedOption&&(langFlag.src=savedOption.dataset.flag,langName.textContent=savedOption.dataset.name),langBtn.addEventListener("click",(()=>{langMenu.classList.toggle("open")})),document.querySelectorAll(".lang-option").forEach((e=>{e.addEventListener("click",(()=>{const t=e.dataset.lang,n=e.dataset.name,a=e.dataset.flag;langFlag.src=a,langName.textContent=n,langMenu.classList.remove("open"),localStorage.setItem("lang",t),applyTranslations(t)}))})),document.querySelectorAll("#mobileLangMenu .lang-option").forEach((e=>{e.addEventListener("click",(()=>{mobileLangMenu.classList.remove("show"),mobileOnas.classList.remove("show")}))})),document.addEventListener("click",(e=>{langBtn.contains(e.target)||langMenu.contains(e.target)||langMenu.classList.remove("open")})),document.getElementById("onasLink").addEventListener("click",(e=>{e.preventDefault(),document.getElementById("onasPanel").classList.add("open"),document.body.style.overflow="hidden"})),document.getElementById("closeOnas").addEventListener("click",(()=>{document.getElementById("onasPanel").classList.remove("open"),document.body.style.overflow="auto"})),document.getElementById("openForm").addEventListener("click",(()=>{window.open("https://docs.google.com/forms/d/e/1FAIpQLSdaWWew0QHgrq0TuVAdrJijEFZWT9vhzQ-H5Q-Uo9f4IwPkyQ/viewform?usp=dialog","_blank")})),document.getElementById("contactBtn").addEventListener("click",(()=>{const e=document.getElementById("footerMail");e.classList.add("flash"),setTimeout((()=>e.classList.remove("flash")),2e3),window.location.href="mailto:kontakt@atify.pl"})),document.getElementById("logo").addEventListener("click",(()=>{location.reload()})),document.addEventListener("click",(e=>{mobileOnas.contains(e.target)||mobileLangMenu.contains(e.target)||hamburger.contains(e.target)||(mobileOnas.classList.remove("show"),mobileLangMenu.classList.remove("show"))}))</script>
+</body>
+</html>
