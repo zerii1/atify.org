@@ -1,6 +1,47 @@
 <!doctype html>
 <html lang=pl>
 <head>
+<script type=application/ld+json>
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://atify.org/",
+  "name": "Atify",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://atify.org/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type=application/ld+json>
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Atify",
+  "url": "https://atify.org/",
+  "logo": "https://atify.org/moje-logo.png",
+  "sameAs": [
+    "https://discord.gg/G9NAS2yy",
+    "https://facebook.com/",
+    "https://x.com/",
+    "https://www.tiktok.com/@atifyorg"
+  ]
+}
+</script>
+<link rel=canonical href=https://atify.org/ >
+<meta name=description content="Atify — tworzymy nowoczesne strony internetowe, animacje, projekty graficzne, DevOps oraz kompleksowe wsparcie IT. Dołącz do zespołu kreatorów technologii.">
+<meta name=keywords content="Atify, grafika, animacje, strony internetowe, DevOps, IT, projektowanie, design, team">
+<meta name=author content=Atify>
+<meta property=og:title content="Atify — Zespół">
+<meta property=og:description content="Nowoczesna technologia, kreatywność i projekty IT. Dołącz do zespołu Atify.">
+<meta property=og:image content=https://atify.org/moje-logo.png>
+<meta property=og:url content=https://atify.org/ >
+<meta property=og:type content=website>
+<meta name=twitter:card content=summary_large_image>
+<meta name=twitter:title content="Atify — Zespół">
+<meta name=twitter:description content="Tworzymy grafikę, animacje, strony internetowe, DevOps oraz wsparcie IT.">
+<meta name=twitter:image content=https://atify.org/moje-logo.png>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title data-i18n=title>Atify — Zespół</title>
@@ -80,7 +121,7 @@ Atify to miejsce, gdzie łączymy design, technologię i biznes. Obecnie rozbudo
 <p data-i18n=about_text>
 Atify to strona, która zajmuje się tworzeniem grafik, animacji, stron internetowych oraz usługami DevOps i szeroko pojętym wsparciem IT.
 </p>
-<img src=moje-logo.png>
+<img src=https://atify.org/moje-logo.png>
 </div>
 <button id=closeOnas class=close-onas data-i18n=close>Zamknij</button>
 </div>
@@ -89,7 +130,7 @@ Atify to strona, która zajmuje się tworzeniem grafik, animacji, stron internet
 <div class=footer-left>
 <div class=footer-rights>© 2025 Atify.org Wszelkie prawa zastrzeżone.</div>
 <div class=footer-contact>
-<a href=mailto:kontakt@atify.pl id=footerMail>kontakt@atify.org</a>
+<a href=mailto:kontakt@atify.org id=footerMail>kontakt@atify.org</a>
 </div>
 </div>
 <div class=footer-icons>
@@ -115,61 +156,6 @@ Atify to strona, która zajmuje się tworzeniem grafik, animacji, stron internet
 </a>
 </div>
 </footer>
-<script>const hamburger=document.getElementById("hamburger"),mobileOnas=document.getElementById("mobileOnas"),mobileLangMenu=document.getElementById("mobileLangMenu");hamburger.addEventListener("click",(()=>{mobileOnas.classList.toggle("show"),mobileLangMenu.classList.toggle("show")})),document.getElementById("mobileOnasLink").addEventListener("click",(e=>{e.preventDefault(),mobileOnas.classList.remove("show"),document.getElementById("onasPanel").classList.add("open"),document.body.style.overflow="hidden"}));const translations={pl:{title:"Atify — Zespół",menu_about:"O nas",menu_contact:"Kontakt",eyebrow:"Nowoczesna technologia · Kreatywna ekipa",hero_title:"ATIFY — DOŁĄCZ DO EKIPY",hero_text:"Atify to miejsce, gdzie łączymy design, technologię i biznes. Obecnie rozbudowujemy zespół — szukamy frontend developerów, grafików, product designerów i osób z pasją do tworzenia.",cta_write:"Napisz do nas",about_title:"INNOWACJE PRZEZ TECHNOLOGIĘ",about_text:"Atify to strona, która zajmuje się tworzeniem grafik, animacji, stron internetowych oraz usługami DevOps i wsparciem IT.",close:"Zamknij",rights:"Wszelkie prawa zastrzeżone!"},en:{title:"Atify — Team",menu_about:"About us",menu_contact:"Contact",eyebrow:"Modern technology · Creative team",hero_title:"ATIFY — JOIN OUR TEAM",hero_text:"Atify is a place where design, technology and business come together. We are expanding our team — looking for frontend developers, graphic designers, product designers and tech-passionate creators.",cta_write:"Write to us",about_title:"INNOVATION THROUGH TECHNOLOGY",about_text:"Atify creates graphics, animations, websites and also provides DevOps and IT support services.",close:"Close",rights:"All rights reserved!"},de:{title:"Atify — Team",menu_about:"Über uns",menu_contact:"Kontakt",eyebrow:"Moderne Technologie · Kreatives Team",hero_title:"ATIFY — TRITT DEM TEAM BEI",hero_text:"Atify ist ein Ort, an dem Design, Technologie und Geschäft zusammenkommen. Wir erweitern unser Team — wir suchen Frontend-Entwickler, Grafiker, Produktdesigner und kreative Talente.",cta_write:"Schreib uns",about_title:"INNOVATION DURCH TECHNOLOGIE",about_text:"Atify erstellt Grafiken, Animationen, Websites und bietet DevOps- und IT-Unterstützung.",close:"Schließen",rights:"Alle Rechte vorbehalten!"},jp:{title:"Atify — チーム",menu_about:"私たちについて",menu_contact:"連絡先",eyebrow:"最新技術 · クリエイティブチーム",hero_title:"ATIFY — チームに参加しよう",hero_text:"Atify はデザイン・技術・ビジネスを融合する場所です。現在、フロントエンド開発者、デザイナー、クリエイターを募集しています。",cta_write:"お問い合わせ",about_title:"テクノロジーによる革新",about_text:"Atify はグラフィック、アニメーション、Webサイト制作、DevOps、ITサポートを提供しています。",close:"閉じる",rights:"全著作権所有!"}};function applyTranslations(e){document.querySelectorAll("[data-i18n]").forEach((t=>{const n=t.dataset.i18n;translations[e][n]&&(t.textContent=translations[e][n])})),document.title=translations[e].title}let currentLang=localStorage.getItem("lang")||"pl";applyTranslations(currentLang);const langBtn=document.getElementById("langBtn"),langMenu=document.getElementById("langMenu"),langFlag=document.getElementById("langFlag"),langName=document.getElementById("langName"),savedOption=document.querySelector(`.lang-option[data-lang="${currentLang}"]`);savedOption&&(langFlag.src=savedOption.dataset.flag,langName.textContent=savedOption.dataset.name),langBtn.addEventListener("click",(()=>{langMenu.classList.toggle("open")})),document.querySelectorAll(".lang-option").forEach((e=>{e.addEventListener("click",(()=>{const t=e.dataset.lang,n=e.dataset.name,a=e.dataset.flag;langFlag.src=a,langName.textContent=n,langMenu.classList.remove("open"),localStorage.setItem("lang",t),applyTranslations(t)}))})),document.querySelectorAll("#mobileLangMenu .lang-option").forEach((e=>{e.addEventListener("click",(()=>{mobileLangMenu.classList.remove("show"),mobileOnas.classList.remove("show")}))})),document.addEventListener("click",(e=>{langBtn.contains(e.target)||langMenu.contains(e.target)||langMenu.classList.remove("open")})),document.getElementById("onasLink").addEventListener("click",(e=>{e.preventDefault(),document.getElementById("onasPanel").classList.add("open"),document.body.style.overflow="hidden"})),document.getElementById("closeOnas").addEventListener("click",(()=>{document.getElementById("onasPanel").classList.remove("open"),document.body.style.overflow="auto"})),document.getElementById("openForm").addEventListener("click",(()=>{window.open("https://docs.google.com/forms/d/e/1FAIpQLSdaWWew0QHgrq0TuVAdrJijEFZWT9vhzQ-H5Q-Uo9f4IwPkyQ/viewform?usp=dialog","_blank")})),document.getElementById("contactBtn").addEventListener("click",(()=>{const e=document.getElementById("footerMail");e.classList.add("flash"),setTimeout((()=>e.classList.remove("flash")),2e3),window.location.href="mailto:kontakt@atify.pl"})),document.getElementById("logo").addEventListener("click",(()=>{location.reload()})),document.addEventListener("click",(e=>{mobileOnas.contains(e.target)||mobileLangMenu.contains(e.target)||hamburger.contains(e.target)||(mobileOnas.classList.remove("show"),mobileLangMenu.classList.remove("show"))}))</script>
-<canvas id="snowCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:50;"></canvas>
-<script>
-const canvas = document.getElementById('snowCanvas');
-const ctx = canvas.getContext('2d');
-let width = canvas.width = window.innerWidth;
-let height = canvas.height = window.innerHeight;
-
-const snowflakes = [];
-const numFlakes = 100;
-
-for (let i = 0; i < numFlakes; i++) {
-  snowflakes.push({
-    x: Math.random() * width,
-    y: Math.random() * height,
-    radius: Math.random() * 3 + 1,
-    speed: Math.random() * 1 + 0.5,
-    angle: Math.random() * Math.PI * 2
-  });
-}
-
-function draw() {
-  ctx.clearRect(0, 0, width, height);
-  ctx.fillStyle = 'white';
-  ctx.beginPath();
-  for (let flake of snowflakes) {
-    ctx.moveTo(flake.x, flake.y);
-    ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
-  }
-  ctx.fill();
-  update();
-}
-
-function update() {
-  for (let flake of snowflakes) {
-    flake.y += flake.speed;
-    flake.x += Math.sin(flake.angle) * 0.5;
-    flake.angle += 0.01;
-    if (flake.y > height) flake.y = 0;
-    if (flake.x > width) flake.x = 0;
-    if (flake.x < 0) flake.x = width;
-  }
-}
-
-function animate() {
-  draw();
-  requestAnimationFrame(animate);
-}
-
-window.addEventListener('resize', () => {
-  width = canvas.width = window.innerWidth;
-  height = canvas.height = window.innerHeight;
-});
-
-animate();
-</script>
+<script>const hamburger=document.getElementById("hamburger"),mobileOnas=document.getElementById("mobileOnas"),mobileLangMenu=document.getElementById("mobileLangMenu");hamburger.addEventListener("click",(()=>{mobileOnas.classList.toggle("show"),mobileLangMenu.classList.toggle("show")})),document.getElementById("mobileOnasLink").addEventListener("click",(e=>{e.preventDefault(),mobileOnas.classList.remove("show"),document.getElementById("onasPanel").classList.add("open"),document.body.style.overflow="hidden"}));const translations={pl:{title:"Atify — Zespół",menu_about:"O nas",menu_contact:"Kontakt",eyebrow:"Nowoczesna technologia · Kreatywna ekipa",hero_title:"ATIFY — DOŁĄCZ DO EKIPY",hero_text:"Atify to miejsce, gdzie łączymy design, technologię i biznes. Obecnie rozbudowujemy zespół — szukamy frontend developerów, grafików, product designerów i osób z pasją do tworzenia.",cta_write:"Napisz do nas",about_title:"INNOWACJE PRZEZ TECHNOLOGIĘ",about_text:"Atify to strona, która zajmuje się tworzeniem grafik, animacji, stron internetowych oraz usługami DevOps i wsparciem IT.",close:"Zamknij",rights:"Wszelkie prawa zastrzeżone!"},en:{title:"Atify — Team",menu_about:"About us",menu_contact:"Contact",eyebrow:"Modern technology · Creative team",hero_title:"ATIFY — JOIN OUR TEAM",hero_text:"Atify is a place where design, technology and business come together. We are expanding our team — looking for frontend developers, graphic designers, product designers and tech-passionate creators.",cta_write:"Write to us",about_title:"INNOVATION THROUGH TECHNOLOGY",about_text:"Atify creates graphics, animations, websites and also provides DevOps and IT support services.",close:"Close",rights:"All rights reserved!"},de:{title:"Atify — Team",menu_about:"Über uns",menu_contact:"Kontakt",eyebrow:"Moderne Technologie · Kreatives Team",hero_title:"ATIFY — TRITT DEM TEAM BEI",hero_text:"Atify ist ein Ort, an dem Design, Technologie und Geschäft zusammenkommen. Wir erweitern unser Team — wir suchen Frontend-Entwickler, Grafiker, Produktdesigner und kreative Talente.",cta_write:"Schreib uns",about_title:"INNOVATION DURCH TECHNOLOGIE",about_text:"Atify erstellt Grafiken, Animationen, Websites und bietet DevOps- und IT-Unterstützung.",close:"Schließen",rights:"Alle Rechte vorbehalten!"},jp:{title:"Atify — チーム",menu_about:"私たちについて",menu_contact:"連絡先",eyebrow:"最新技術 · クリエイティブチーム",hero_title:"ATIFY — チームに参加しよう",hero_text:"Atify はデザイン・技術・ビジネスを融合する場所です。現在、フロントエンド開発者、デザイナー、クリエイターを募集しています。",cta_write:"お問い合わせ",about_title:"テクノロジーによる革新",about_text:"Atify はグラフィック、アニメーション、Webサイト制作、DevOps、ITサポートを提供しています。",close:"閉じる",rights:"全著作権所有!"}};function applyTranslations(e){document.querySelectorAll("[data-i18n]").forEach((t=>{const n=t.dataset.i18n;translations[e][n]&&(t.textContent=translations[e][n])})),document.title=translations[e].title}let currentLang=localStorage.getItem("lang")||"pl";applyTranslations(currentLang);const langBtn=document.getElementById("langBtn"),langMenu=document.getElementById("langMenu"),langFlag=document.getElementById("langFlag"),langName=document.getElementById("langName"),savedOption=document.querySelector(`.lang-option[data-lang="${currentLang}"]`);savedOption&&(langFlag.src=savedOption.dataset.flag,langName.textContent=savedOption.dataset.name),langBtn.addEventListener("click",(()=>{langMenu.classList.toggle("open")})),document.querySelectorAll(".lang-option").forEach((e=>{e.addEventListener("click",(()=>{const t=e.dataset.lang,n=e.dataset.name,a=e.dataset.flag;langFlag.src=a,langName.textContent=n,langMenu.classList.remove("open"),localStorage.setItem("lang",t),applyTranslations(t)}))})),document.querySelectorAll("#mobileLangMenu .lang-option").forEach((e=>{e.addEventListener("click",(()=>{mobileLangMenu.classList.remove("show"),mobileOnas.classList.remove("show")}))})),document.addEventListener("click",(e=>{langBtn.contains(e.target)||langMenu.contains(e.target)||langMenu.classList.remove("open")})),document.getElementById("onasLink").addEventListener("click",(e=>{e.preventDefault(),document.getElementById("onasPanel").classList.add("open"),document.body.style.overflow="hidden"})),document.getElementById("closeOnas").addEventListener("click",(()=>{document.getElementById("onasPanel").classList.remove("open"),document.body.style.overflow="auto"})),document.getElementById("openForm").addEventListener("click",(()=>{window.open("https://docs.google.com/forms/d/e/1FAIpQLSdaWWew0QHgrq0TuVAdrJijEFZWT9vhzQ-H5Q-Uo9f4IwPkyQ/viewform?usp=dialog","_blank")})),document.getElementById("contactBtn").addEventListener("click",(()=>{const e=document.getElementById("footerMail");e.classList.add("flash"),setTimeout((()=>e.classList.remove("flash")),2e3),window.location.href="mailto:kontakt@atify.org"})),document.getElementById("logo").addEventListener("click",(()=>{location.reload()})),document.addEventListener("click",(e=>{mobileOnas.contains(e.target)||mobileLangMenu.contains(e.target)||hamburger.contains(e.target)||(mobileOnas.classList.remove("show"),mobileLangMenu.classList.remove("show"))}))</script>
 </body>
 </html>
